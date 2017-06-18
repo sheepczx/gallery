@@ -1,0 +1,19 @@
+<h1>Upload a file:</h1>
+		
+        <form enctype="multipart/form-data" action="{{first}}" method="post">
+            <div>
+                <label for="fileinput">Upload a file:</label>
+                <input name="userfile" type="file" id="fileinput"  />
+            </div>
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" value="{{second}}"/>
+			</div>
+			<div>
+				<label for="description">Description:</label>
+				<input type="text" id="description" name="description" value="{{third}}"/>
+			</div>
+			<div>
+                <input type="submit" value="Upload File" name="picfileupload" />
+            </div>
+        </form>
